@@ -1,0 +1,237 @@
+//styling divs
+.mainBanner{
+    width:100%;
+    height: 100vh;
+    //padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.container {
+    margin: 0 auto;
+    width: 985px;
+    height: 500px;
+    overflow: hidden;
+    background-image: url('../images/wood.jpg');
+    background-size: cover;
+    position: relative;
+    .candyCaneRow, .cakeTootsyRow, .gummiesCandyRow,.halvahCookieRow {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+}
+.sprite { 
+        width: 100px;
+        height: 100px;
+        background-image: url('../images/sprite1.png');
+        background-repeat: no-repeat;
+        margin-right: 200px
+    }
+.blueStar {
+        background-position: -100px -100px; 
+}
+.greenSquare {
+    background-position: 0px -100px;
+}
+.redForm{
+    background-position: -200px -100px;
+}
+.yellowRound {
+    background-position: -300px -100px;
+}
+.name{
+        font-family: parisienne;
+        font-size: 48px;
+        color: whitesmoke;
+        font-weight: bold;
+        padding-top: 2%;
+        margin-left: 150px;
+    }
+.danish{
+    font-family: lobster;
+    font-size: 10px;
+    color:red;
+}
+.chocBar{
+    font-family: parisienne;
+    color:green;
+    font-size:8px;
+    font-weight: bold;
+}
+//...........................................................................................................................
+//animation
+.candyCaneRow {
+        opacity:0;
+        @include animation(($animation-delay+2s,$animation-delay+24s),$animation-duration,(moveDownCandyCane,move2left));
+        div:first-child{
+            @include animation($animation-delay+8s, $animation-duration,(moveLeft));
+            }
+    div:nth-child(2){
+            @include animation(($animation-delay+8s,$animation-delay+16s,$animation-delay+24s),($animation-duration, $animation-duration/3,$animation-duration),(moveRight,colorChange,rotateRight));
+            }
+        }
+.cakeTootsyRow {
+        opacity:0;
+        @include animation(($animation-delay+2s,$animation-delay+24s),$animation-duration, (moveDownCakeTootsy,move2right));
+        div:first-child{
+            @include animation($animation-delay+10s, $animation-duration,(moveLeft));
+            }
+        div:nth-child(2){
+           @include animation(($animation-delay+10s,$animation-delay+18s,$animation-delay+24s),($animation-duration, $animation-duration/3,$animation-duration),(moveRight,colorChange,rotateLeft));
+            }
+}
+.gummiesCandyRow{
+    opacity:0;
+    @include animation(($animation-delay+2s,$animation-delay+24s), $animation-duration+2s, (moveDownGummiesCandy,move2left));
+    div:first-child{
+            @include animation($animation-delay+12s, $animation-duration,(moveLeft));
+            }
+        div:nth-child(2){
+           @include animation(($animation-delay+12s,$animation-delay+20s,$animation-delay+24s),($animation-duration, $animation-duration/3, $animation-duration),(moveRight,colorChange,rotateRight));
+        }
+}
+.halvahCookieRow{
+    opacity:0;
+    @include animation(($animation-delay+4s,$animation-delay+24s), $animation-duration+2s, (moveDownHalvah,move2right));
+    div:first-child{
+            @include animation($animation-delay+14s, $animation-duration,(moveLeft));
+            }
+        div:nth-child(2){
+            @include animation(($animation-delay+14s,$animation-delay+22s,$animation-delay+24s),($animation-duration, $animation-duration/3,$animation-duration),(moveRight,colorChange,rotateLeft));
+        }
+}
+.sweetRoll{
+    //font-family:$font-family;
+    //font-size:32px;
+    background-image: url('../images/gift.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 230px;
+    height: 150px;
+    //text-align: center;
+    //color:$text-color;
+    position:absolute;
+    top:10px;
+    left:10px;
+    opacity:0;
+    @include animation(($animation-delay+32s,$animation-delay+35s,$animation-delay+38s,$animation-delay+42s),($animation-duration,$animation-duration,$animation-duration+2s,$animation-duration),(moveDownSweetRoll,moveRightSweetRoll,rotateBox,disappearSweetRoll));
+}
+.specials {
+    position:absolute;
+    opacity:0;
+    display: flex;
+    flex-direction: column;
+    top:200px;
+    left:460px;
+    text-align: center;
+    .danish{
+        margin-top:40px;
+    }
+    @include animation(($animation-delay+28s,$animation-delay+38s,$animation-delay+42s),($animation-duration,$animation-duration+2s,$animation-duration),(gettingBigger,rotateSweets,disappear));
+}
+//............................................................................................................................
+//keyframes
+@include keyframes(moveDownCandyCane) {
+    0%{opacity:0;
+    transform:translateY(-50px);}
+    100%{opacity:1;
+    transform:translateY(0px);}
+}
+@include keyframes(moveDownCakeTootsy) {
+    0%{opacity:0;
+    transform:translateY(-150px);}
+    100%{opacity:1;
+    transform:translateY(0px);}
+} 
+@include keyframes(moveDownGummiesCandy) {
+    0%{opacity:0;
+    transform:translateY(-250px);}
+    100%{opacity:1;
+        transform:translateY(0px);}
+}
+@include keyframes(moveDownHalvah) {
+    0%{opacity:0;
+    transform:translateY(-350px);}
+    100%{opacity:1;
+    transform:translateY(0px);}
+}
+@include keyframes(moveLeft){
+    0%{transform:translateX(0px);}
+    100%{transform:translateX(-130px);}
+}
+@include keyframes(moveRight){
+    0%{transform:translateX(0px);}
+    100%{transform:translateX(200%);}
+}
+@include keyframes(colorChange){
+    from {background-position-y: -100px;}
+    to {background-position-y: 0px;}
+}
+@include keyframes(move2left) {
+    0%{transform:translateX(0px);}
+    100%{transform:translateX(-120%);}
+}
+@include keyframes(move2right) {
+    0%{transform:translateX(0px);}
+    100%{transform:translateX(120%);}
+}
+@include keyframes(rotateRight){
+    0%{transform:translateX(-120%);
+       transform:rotate(0deg);}
+    100%{transform:translateX(-120%);
+        transform:rotate(-360deg);}
+}
+@include keyframes(rotateLeft){
+    0%{transform:translateX(120%);
+       transform:rotate(0deg);}
+    100%{transform:translateX(120%);
+        transform:rotate(360deg);}
+}
+@include keyframes(gettingBigger){
+    0%{opacity:1;}
+    100%{opacity:1;
+        transform:scale(6);}
+}
+@include keyframes(moveDownSweetRoll) {
+    0% {margin-top: 0px;
+        opacity: 0;}
+    100% {margin-top: 180px;
+        opacity: 1;}
+}
+@include keyframes(moveRightSweetRoll) {
+    0% {margin-top: 0;
+        transform: translate(0px, 180px);
+    }
+    100% {transform: translate(150%, 180px);
+    }
+}
+@include keyframes(rotateSweets) {
+    0% {transform: scale(6) rotateX(0deg);
+    }
+    100% {transform: scale(6) rotateX(360deg);
+    }
+}
+@include keyframes(rotateBox){
+    0% {top:40%;
+        left:358px;
+        transform:rotateX(0deg);}
+    100%{top:40%;
+        left:358px;
+        transform:rotateX(360deg);}      
+}
+@include keyframes(disappear){
+    0%{opacity:1;
+        transform:scale(6);}
+    100%{opacity:0;
+    transform:scale(0,3);}
+}
+@include keyframes(disappearSweetRoll){
+    0%{opacity:1;}
+    100%{opacity:0;
+        transform:scale(0.3);}
+}
+
+
+
+

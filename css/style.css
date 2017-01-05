@@ -1,0 +1,669 @@
+.mainBanner {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.container {
+  margin: 0 auto;
+  width: 985px;
+  height: 500px;
+  overflow: hidden;
+  background-image: url("../images/wood.jpg");
+  background-size: cover;
+  position: relative; }
+  .container .candyCaneRow, .container .cakeTootsyRow, .container .gummiesCandyRow, .container .halvahCookieRow {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 20px; }
+
+.sprite {
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/sprite1.png");
+  background-repeat: no-repeat;
+  margin-right: 200px; }
+
+.blueStar {
+  background-position: -100px -100px; }
+
+.greenSquare {
+  background-position: 0px -100px; }
+
+.redForm {
+  background-position: -200px -100px; }
+
+.yellowRound {
+  background-position: -300px -100px; }
+
+.name {
+  font-family: parisienne;
+  font-size: 48px;
+  color: whitesmoke;
+  font-weight: bold;
+  padding-top: 2%;
+  margin-left: 150px; }
+
+.danish {
+  font-family: lobster;
+  font-size: 10px;
+  color: red; }
+
+.chocBar {
+  font-family: parisienne;
+  color: green;
+  font-size: 8px;
+  font-weight: bold; }
+
+.candyCaneRow {
+  opacity: 0;
+  -webkit-animation-delay: 2s, 24s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: moveDownCandyCane, move2left;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 2s, 24s;
+  -moz-animation-duration: 2s;
+  -moz-animation-name: moveDownCandyCane, move2left;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 2s, 24s;
+  -o-animation-duration: 2s;
+  -o-animation-name: moveDownCandyCane, move2left;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 2s, 24s;
+  animation-duration: 2s;
+  animation-name: moveDownCandyCane, move2left;
+  animation-fill-mode: forwards; }
+  .candyCaneRow div:first-child {
+    -webkit-animation-delay: 8s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: moveLeft;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-delay: 8s;
+    -moz-animation-duration: 2s;
+    -moz-animation-name: moveLeft;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 8s;
+    -o-animation-duration: 2s;
+    -o-animation-name: moveLeft;
+    -o-animation-fill-mode: forwards;
+    animation-delay: 8s;
+    animation-duration: 2s;
+    animation-name: moveLeft;
+    animation-fill-mode: forwards; }
+  .candyCaneRow div:nth-child(2) {
+    -webkit-animation-delay: 8s, 16s, 24s;
+    -webkit-animation-duration: 2s, 0.66667s, 2s;
+    -webkit-animation-name: moveRight, colorChange, rotateRight;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-delay: 8s, 16s, 24s;
+    -moz-animation-duration: 2s, 0.66667s, 2s;
+    -moz-animation-name: moveRight, colorChange, rotateRight;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 8s, 16s, 24s;
+    -o-animation-duration: 2s, 0.66667s, 2s;
+    -o-animation-name: moveRight, colorChange, rotateRight;
+    -o-animation-fill-mode: forwards;
+    animation-delay: 8s, 16s, 24s;
+    animation-duration: 2s, 0.66667s, 2s;
+    animation-name: moveRight, colorChange, rotateRight;
+    animation-fill-mode: forwards; }
+
+.cakeTootsyRow {
+  opacity: 0;
+  -webkit-animation-delay: 2s, 24s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: moveDownCakeTootsy, move2right;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 2s, 24s;
+  -moz-animation-duration: 2s;
+  -moz-animation-name: moveDownCakeTootsy, move2right;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 2s, 24s;
+  -o-animation-duration: 2s;
+  -o-animation-name: moveDownCakeTootsy, move2right;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 2s, 24s;
+  animation-duration: 2s;
+  animation-name: moveDownCakeTootsy, move2right;
+  animation-fill-mode: forwards; }
+  .cakeTootsyRow div:first-child {
+    -webkit-animation-delay: 10s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: moveLeft;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-delay: 10s;
+    -moz-animation-duration: 2s;
+    -moz-animation-name: moveLeft;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 10s;
+    -o-animation-duration: 2s;
+    -o-animation-name: moveLeft;
+    -o-animation-fill-mode: forwards;
+    animation-delay: 10s;
+    animation-duration: 2s;
+    animation-name: moveLeft;
+    animation-fill-mode: forwards; }
+  .cakeTootsyRow div:nth-child(2) {
+    -webkit-animation-delay: 10s, 18s, 24s;
+    -webkit-animation-duration: 2s, 0.66667s, 2s;
+    -webkit-animation-name: moveRight, colorChange, rotateLeft;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-delay: 10s, 18s, 24s;
+    -moz-animation-duration: 2s, 0.66667s, 2s;
+    -moz-animation-name: moveRight, colorChange, rotateLeft;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 10s, 18s, 24s;
+    -o-animation-duration: 2s, 0.66667s, 2s;
+    -o-animation-name: moveRight, colorChange, rotateLeft;
+    -o-animation-fill-mode: forwards;
+    animation-delay: 10s, 18s, 24s;
+    animation-duration: 2s, 0.66667s, 2s;
+    animation-name: moveRight, colorChange, rotateLeft;
+    animation-fill-mode: forwards; }
+
+.gummiesCandyRow {
+  opacity: 0;
+  -webkit-animation-delay: 2s, 24s;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-name: moveDownGummiesCandy, move2left;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 2s, 24s;
+  -moz-animation-duration: 4s;
+  -moz-animation-name: moveDownGummiesCandy, move2left;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 2s, 24s;
+  -o-animation-duration: 4s;
+  -o-animation-name: moveDownGummiesCandy, move2left;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 2s, 24s;
+  animation-duration: 4s;
+  animation-name: moveDownGummiesCandy, move2left;
+  animation-fill-mode: forwards; }
+  .gummiesCandyRow div:first-child {
+    -webkit-animation-delay: 12s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: moveLeft;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-delay: 12s;
+    -moz-animation-duration: 2s;
+    -moz-animation-name: moveLeft;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 12s;
+    -o-animation-duration: 2s;
+    -o-animation-name: moveLeft;
+    -o-animation-fill-mode: forwards;
+    animation-delay: 12s;
+    animation-duration: 2s;
+    animation-name: moveLeft;
+    animation-fill-mode: forwards; }
+  .gummiesCandyRow div:nth-child(2) {
+    -webkit-animation-delay: 12s, 20s, 24s;
+    -webkit-animation-duration: 2s, 0.66667s, 2s;
+    -webkit-animation-name: moveRight, colorChange, rotateRight;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-delay: 12s, 20s, 24s;
+    -moz-animation-duration: 2s, 0.66667s, 2s;
+    -moz-animation-name: moveRight, colorChange, rotateRight;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 12s, 20s, 24s;
+    -o-animation-duration: 2s, 0.66667s, 2s;
+    -o-animation-name: moveRight, colorChange, rotateRight;
+    -o-animation-fill-mode: forwards;
+    animation-delay: 12s, 20s, 24s;
+    animation-duration: 2s, 0.66667s, 2s;
+    animation-name: moveRight, colorChange, rotateRight;
+    animation-fill-mode: forwards; }
+
+.halvahCookieRow {
+  opacity: 0;
+  -webkit-animation-delay: 4s, 24s;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-name: moveDownHalvah, move2right;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 4s, 24s;
+  -moz-animation-duration: 4s;
+  -moz-animation-name: moveDownHalvah, move2right;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 4s, 24s;
+  -o-animation-duration: 4s;
+  -o-animation-name: moveDownHalvah, move2right;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 4s, 24s;
+  animation-duration: 4s;
+  animation-name: moveDownHalvah, move2right;
+  animation-fill-mode: forwards; }
+  .halvahCookieRow div:first-child {
+    -webkit-animation-delay: 14s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: moveLeft;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-delay: 14s;
+    -moz-animation-duration: 2s;
+    -moz-animation-name: moveLeft;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 14s;
+    -o-animation-duration: 2s;
+    -o-animation-name: moveLeft;
+    -o-animation-fill-mode: forwards;
+    animation-delay: 14s;
+    animation-duration: 2s;
+    animation-name: moveLeft;
+    animation-fill-mode: forwards; }
+  .halvahCookieRow div:nth-child(2) {
+    -webkit-animation-delay: 14s, 22s, 24s;
+    -webkit-animation-duration: 2s, 0.66667s, 2s;
+    -webkit-animation-name: moveRight, colorChange, rotateLeft;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-delay: 14s, 22s, 24s;
+    -moz-animation-duration: 2s, 0.66667s, 2s;
+    -moz-animation-name: moveRight, colorChange, rotateLeft;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 14s, 22s, 24s;
+    -o-animation-duration: 2s, 0.66667s, 2s;
+    -o-animation-name: moveRight, colorChange, rotateLeft;
+    -o-animation-fill-mode: forwards;
+    animation-delay: 14s, 22s, 24s;
+    animation-duration: 2s, 0.66667s, 2s;
+    animation-name: moveRight, colorChange, rotateLeft;
+    animation-fill-mode: forwards; }
+
+.sweetRoll {
+  background-image: url("../images/gift.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 230px;
+  height: 150px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+  -webkit-animation-delay: 32s, 35s, 38s, 42s;
+  -webkit-animation-duration: 2s, 2s, 4s, 2s;
+  -webkit-animation-name: moveDownSweetRoll, moveRightSweetRoll, rotateBox, disappearSweetRoll;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 32s, 35s, 38s, 42s;
+  -moz-animation-duration: 2s, 2s, 4s, 2s;
+  -moz-animation-name: moveDownSweetRoll, moveRightSweetRoll, rotateBox, disappearSweetRoll;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 32s, 35s, 38s, 42s;
+  -o-animation-duration: 2s, 2s, 4s, 2s;
+  -o-animation-name: moveDownSweetRoll, moveRightSweetRoll, rotateBox, disappearSweetRoll;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 32s, 35s, 38s, 42s;
+  animation-duration: 2s, 2s, 4s, 2s;
+  animation-name: moveDownSweetRoll, moveRightSweetRoll, rotateBox, disappearSweetRoll;
+  animation-fill-mode: forwards; }
+
+.specials {
+  position: absolute;
+  opacity: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 200px;
+  left: 460px;
+  text-align: center;
+  -webkit-animation-delay: 28s, 38s, 42s;
+  -webkit-animation-duration: 2s, 4s, 2s;
+  -webkit-animation-name: gettingBigger, rotateSweets, disappear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 28s, 38s, 42s;
+  -moz-animation-duration: 2s, 4s, 2s;
+  -moz-animation-name: gettingBigger, rotateSweets, disappear;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 28s, 38s, 42s;
+  -o-animation-duration: 2s, 4s, 2s;
+  -o-animation-name: gettingBigger, rotateSweets, disappear;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 28s, 38s, 42s;
+  animation-duration: 2s, 4s, 2s;
+  animation-name: gettingBigger, rotateSweets, disappear;
+  animation-fill-mode: forwards; }
+  .specials .danish {
+    margin-top: 40px; }
+
+@-webkit-keyframes moveDownCandyCane {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@keyframes moveDownCandyCane {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@-webkit-keyframes moveDownCakeTootsy {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@keyframes moveDownCakeTootsy {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@-webkit-keyframes moveDownGummiesCandy {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@keyframes moveDownGummiesCandy {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@-webkit-keyframes moveDownHalvah {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-350px);
+            transform: translateY(-350px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@keyframes moveDownHalvah {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-350px);
+            transform: translateY(-350px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@-webkit-keyframes moveLeft {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(-130px);
+            transform: translateX(-130px); } }
+
+@keyframes moveLeft {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(-130px);
+            transform: translateX(-130px); } }
+
+@-webkit-keyframes moveRight {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%); } }
+
+@keyframes moveRight {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%); } }
+
+@-webkit-keyframes colorChange {
+  from {
+    background-position-y: -100px; }
+  to {
+    background-position-y: 0px; } }
+
+@keyframes colorChange {
+  from {
+    background-position-y: -100px; }
+  to {
+    background-position-y: 0px; } }
+
+@-webkit-keyframes move2left {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%); } }
+
+@keyframes move2left {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%); } }
+
+@-webkit-keyframes move2right {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%); } }
+
+@keyframes move2right {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+  100% {
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%); } }
+
+@-webkit-keyframes rotateRight {
+  0% {
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%);
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+@keyframes rotateRight {
+  0% {
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%);
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+@-webkit-keyframes rotateLeft {
+  0% {
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotateLeft {
+  0% {
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes gettingBigger {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(6);
+            transform: scale(6); } }
+
+@keyframes gettingBigger {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(6);
+            transform: scale(6); } }
+
+@-webkit-keyframes moveDownSweetRoll {
+  0% {
+    margin-top: 0px;
+    opacity: 0; }
+  100% {
+    margin-top: 180px;
+    opacity: 1; } }
+
+@keyframes moveDownSweetRoll {
+  0% {
+    margin-top: 0px;
+    opacity: 0; }
+  100% {
+    margin-top: 180px;
+    opacity: 1; } }
+
+@-webkit-keyframes moveRightSweetRoll {
+  0% {
+    margin-top: 0;
+    -webkit-transform: translate(0px, 180px);
+            transform: translate(0px, 180px); }
+  100% {
+    -webkit-transform: translate(150%, 180px);
+            transform: translate(150%, 180px); } }
+
+@keyframes moveRightSweetRoll {
+  0% {
+    margin-top: 0;
+    -webkit-transform: translate(0px, 180px);
+            transform: translate(0px, 180px); }
+  100% {
+    -webkit-transform: translate(150%, 180px);
+            transform: translate(150%, 180px); } }
+
+@-webkit-keyframes rotateSweets {
+  0% {
+    -webkit-transform: scale(6) rotateX(0deg);
+            transform: scale(6) rotateX(0deg); }
+  100% {
+    -webkit-transform: scale(6) rotateX(360deg);
+            transform: scale(6) rotateX(360deg); } }
+
+@keyframes rotateSweets {
+  0% {
+    -webkit-transform: scale(6) rotateX(0deg);
+            transform: scale(6) rotateX(0deg); }
+  100% {
+    -webkit-transform: scale(6) rotateX(360deg);
+            transform: scale(6) rotateX(360deg); } }
+
+@-webkit-keyframes rotateBox {
+  0% {
+    top: 40%;
+    left: 358px;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg); }
+  100% {
+    top: 40%;
+    left: 358px;
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg); } }
+
+@keyframes rotateBox {
+  0% {
+    top: 40%;
+    left: 358px;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg); }
+  100% {
+    top: 40%;
+    left: 358px;
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg); } }
+
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(6);
+            transform: scale(6); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0, 3);
+            transform: scale(0, 3); } }
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(6);
+            transform: scale(6); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0, 3);
+            transform: scale(0, 3); } }
+
+@-webkit-keyframes disappearSweetRoll {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3); } }
+
+@keyframes disappearSweetRoll {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3); } }
+
+/*# sourceMappingURL=style.css.map */
